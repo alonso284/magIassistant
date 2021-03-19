@@ -14,6 +14,8 @@ import logging
 from discord.ext import commands
 # Import JSON
 import json
+import os
+
 
 # Set up logging
 """ logger = logging.getLogger('discord')
@@ -52,8 +54,8 @@ async def on_ready():
 with open('./magIAObject.json') as myObject:
     magIA = json.load(myObject)
 
-with open('./config.json') as myObject:
-    token = json.load(myObject)
+""" with open('./config.json') as myObject:
+    token = json.load(myObject) """
 
 
 @bot.command()
@@ -130,4 +132,4 @@ async def contactInfo(ctx):
     await ctx.send(content='contacto_magiajuvenil@frskills.com')
 
 
-bot.run(token)
+bot.run(os.environ.get("DPY_TOKEN"))
