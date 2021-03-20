@@ -1,0 +1,69 @@
+,,,,,,
+1,Conoce el mundo de GitHub,martes,2 de marzo,14:00 - 15:30,Introducción a Github | Introducción al programa,Sesión bajo demanda los recursos los encuentras en tu grupo de Teams
+1,Conoce el mundo de GitHub,jueves,4 de marzo,14:00 - 15:30,Migración y carga de repositorio ,Sesión bajo demanda los recursos los encuentras en tu grupo de Teams
+1,Conoce el mundo de GitHub,sábado,6 de marzo,12:00 - 13:30,Asesoría #1,https://aka.ms/GitHub/Bienvenida/Asesoria
+1,Conoce el mundo de GitHub,martes,9 de marzo,14:00 - 15:30,Administración de cambios y versiones / Mantenimiento del repositorio,Sesión bajo demanda los recursos los encuentras en tu grupo de Teams
+1,Conoce el mundo de GitHub,jueves,11 de marzo,14:00 - 15:30,Resolución de conflictos  /Comunicación con Markdown,Sesión bajo demanda los recursos los encuentras en tu grupo de Teams
+1,Conoce el mundo de GitHub,sábado,13 de marzo,12:00 - 13:30,Asesoría #2,https://aka.ms/GitHub/Asesoria2
+1,Conoce el mundo de GitHub,martes,16 de marzo,14:00 - 15:30,Automatización y flujo de trabajos ,Sesión bajo demanda los recursos los encuentras en tu grupo de Teams
+1,Conoce el mundo de GitHub,jueves,18 de marzo,14:00 - 15:30,Trabajo basado en versiones ,Sesión bajo demanda los recursos los encuentras en tu grupo de Teams
+1,Conoce el mundo de GitHub,sábado,20 de marzo,12:00 - 13:30,Asesoría #3,https://aka.ms/GitHub/Asesoria3
+2,Aprendiendo a Programar,martes,2 de marzo,14:30 - 16:00,Introducción lenguaje de programación Java Script y Node js ,https://aka.ms/2marzo/Bienvenida/JS
+2,Aprendiendo a Programar,miércoles,3 de marzo,14:30 - 16:00,Tipos de datos Parte 1,https://aka.ms/3marzo/Datos
+2,Aprendiendo a Programar,jueves,4 de marzo,14:30 - 16:00,Operadores lógicos,https://aka.ms/4marzo/Operadores
+2,Aprendiendo a Programar,sábado,6 de marzo,08:00 - 09:30,Estructuras de control Parte 1,https://aka.ms/6marzo/Estructuras
+2,Aprendiendo a Programar,sábado,6 de marzo,09:30 - 11:00,Asesoría #1,https://aka.ms/6marzo/sabado/Asesoria1
+2,Aprendiendo a Programar,martes,9 de marzo,14:30 - 16:00,Estructuras de control Parte 2,https://aka.ms/9marzo/estructuras/parte2
+2,Aprendiendo a Programar,miércoles,10 de marzo,14:30 - 16:00,Estructuras de control Parte 3,https://aka.ms/10marzo/estructuras/parte3
+2,Aprendiendo a Programar,jueves,11 de marzo,14:30 - 16:00,Arreglos Parte 1,https://aka.ms/11marzo/Arreglos/parte1
+2,Aprendiendo a Programar,sábado,13 de marzo,08:00 - 09:30,Arreglos Parte 2,https://aka.ms/13marzo/Arreglos/parte2
+2,Aprendiendo a Programar,sábado,13 de marzo,09:30 - 11:00,Asesoría #2,https://aka.ms/13marzo/sabado/Asesoria2
+2,Aprendiendo a Programar,martes,16 de marzo,14:30 - 16:00,Ciclos ,https://aka.ms/16marzo/Ciclos
+2,Aprendiendo a Programar,miércoles,17 de marzo,14:30 - 16:00,Programación de funciones Parte 1,https://aka.ms/17marzo/Programacion
+2,Aprendiendo a Programar,jueves,18 de marzo,14:30 - 16:00,Programación de funciones Parte 2,https://aka.ms/18marzo/Programacion/parte2
+2,Aprendiendo a Programar,sábado,20 de marzo,08:00 - 09:30,Introducción a paradigma de programación orientada a objetos,https://aka.ms/20marzo/Orientada/Objetos
+2,Aprendiendo a Programar,sábado,20 de marzo,09:30 - 11:00,Asesoría #3,https://aka.ms/20marzo/sabado/Asesoria3
+2,Aprendiendo a Programar,martes,23 de marzo,14:30 - 16:00,Descomposición de objetos,https://aka.ms/23marzo/ObjetosD
+2,Aprendiendo a Programar,miércoles,24 de marzo,14:30 - 16:00,Utilerías de Java Script,https://aka.ms/24marzo/utilerias/JavaScript
+2,Aprendiendo a Programar,jueves,25 de marzo,14:30 - 16:00,Funciones asíncronas Parte 1,https://aka.ms/25marzo/Funciones
+2,Aprendiendo a Programar,sábado,27 de marzo,08:00 - 09:30,Funciones asíncronas Parte 2,https://aka.ms/27marzo/Funiones/Parte2
+2,Aprendiendo a Programar,sábado,27 de marzo,09:30 - 11:00,Asesoría #4,https://aka.ms/27marzo/sabado/Asesoria4
+3,El poder de los servidores,martes,30 de marzo,14:30 - 16:00,Arquitectura Cliente Servidor ,https://aka.ms/30marzo/cliente/Servidor
+3,El poder de los servidores,miércoles,31 de marzo,14:30 - 16:00,Protocolos de comunicación web,https://aka.ms/31marzo/Protocolos
+3,El poder de los servidores,jueves,1 de abril,14:30 - 16:00,Servidores Web Parte 1,https://aka.ms/1Abril/Servidores
+3,El poder de los servidores,sábado,3 de abril,08:00 - 09:30,Servidores Web Parte 2,https://aka.ms/3Abril/Servidores
+3,El poder de los servidores,sábado,3 de abril,09:30 - 11:00,Asesoría #1,https://aka.ms/3Abril/sabado/Asesoria
+3,El poder de los servidores,martes,6 de abril,14:30 - 16:00,Peticiones HTTP ,https://aka.ms/6Abril/Peticiones
+3,El poder de los servidores,miércoles,7 de abril,14:30 - 16:00,Servicios WEB ,https://aka.ms/7Abril/Servicios/Web
+3,El poder de los servidores,jueves,8 de abril,14:30 - 16:00,Servicios SOAP ,https://aka.ms/8Abril/Servicios/Soap
+3,El poder de los servidores,sábado,10 de abril,08:00 - 09:30,Servicios REST Parte 1,https://aka.ms/10Abril/Servicios/Rest
+3,El poder de los servidores,sábado,10 abril,09:30 - 11:00,Asesoría #2,https://aka.ms/10Abril/sabado/Asesoria
+3,El poder de los servidores,martes,13 de  abril,14:30 - 16:00,Servicios REST Parte 2,https://aka.ms/13Abril/Servicio/REST
+3,El poder de los servidores,miércoles,14 de abril,14:30 - 16:00,Servicios con Node js Parte 1,https://aka.ms/14Abril/Servicios/Node
+3,El poder de los servidores,jueves,15 de abril,08:00 - 09:30,Servicios con Node js Parte 2,https://aka.ms/15Abril/Servicios/Node/Parte2
+3,El poder de los servidores,sábado,17 de abril,09:30 - 11:00,Asesoría #3,https://aka.ms/17Abril/sabado/Asesoria
+4,Fundamentos de Inteligencia Artificial  (IA -900),martes,20 de abril,14:30 - 16:00,Introducción a la inteligencia artificial y Catálogo de servicios de IA,https://aka.ms/20Abril/Bienvenida/AI
+4,Fundamentos de Inteligencia Artificial  (IA -900),miércoles,21 de abril,14:30 - 16:00,Fases de desarrollo de un proyecto de software de IA,https://aka.ms/21abril/AI
+4,Fundamentos de Inteligencia Artificial  (IA -900),jueves,22 de abril,14:30 - 16:00,Visión Artificial Parte 1,https://aka.ms/22Abril/Visions
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,24 de abril,08:00 - 09:30,Visión Artificial Parte 2,https://aka.ms/24Abril/Vision/Parte2
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,24 de abril,09:30 - 11:00,Asesoría #1,https://aka.ms/24Abril/sabado/Asesoria1
+4,Fundamentos de Inteligencia Artificial  (IA -900),martes,27 de abril,14:30 - 16:00,Visión Artificial Parte 1 [Caso práctico],https://aka.ms/27Abril/Vision/Artificial
+4,Fundamentos de Inteligencia Artificial  (IA -900),miércoles,28 de abril,14:30 - 16:00,Visión Artificial Parte 2 [Caso práctico],https://aka.ms/28Abril/Vision/Parte2
+4,Fundamentos de Inteligencia Artificial  (IA -900),jueves,29 de abril,14:30 - 16:00,Reconocimiento Facial Parte 1,https://aka.ms/29Abril/Reconocimiento
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,1 de mayo,08:00 - 09:30,Reconocimiento Facial Parte 2,https://aka.ms/1Mayo/Reconocimiento/Parte2
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,1 de mayo,09:30 - 11:00,Asesoría #2,https://aka.ms/1Mayo/Asesoria2
+4,Fundamentos de Inteligencia Artificial  (IA -900),martes,4 de mayo,14:30 - 16:00,Reconocimiento Facial Parte 1 [Caso práctico],https://aka.ms/4Mayo/Caso/Facial
+4,Fundamentos de Inteligencia Artificial  (IA -900),miércoles,5 de mayo,14:30 - 16:00,Reconocimiento Facial Parte 2 [Caso práctico],https://aka.ms/5Mayo/Caso2/Facial
+4,Fundamentos de Inteligencia Artificial  (IA -900),jueves,6 de mayo,14:30 - 16:00,Inteligencia cognitiva Parte 1,https://aka.ms/6Mayo/Inteligencia
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,8 de mayo,08:00 - 09:30,Inteligencia cognitiva Parte 2,https://aka.ms/8Mayo/Cognitiva
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,8 de mayo,09:30 - 11:00,Asesoría #3,https://aka.ms/8Mayo/Asesoria3
+4,Fundamentos de Inteligencia Artificial  (IA -900),martes,11 de mayo,14:30 - 16:00,Inteligencia cognitiva Parte 1 [Caso práctico],https://aka.ms/11Mayo/CasoPractico
+4,Fundamentos de Inteligencia Artificial  (IA -900),miércoles,12 de mayo,14:30 - 16:00,Inteligencia cognitiva Parte 2 [Caso práctico],https://aka.ms/12Mayo/CasoPractico2
+4,Fundamentos de Inteligencia Artificial  (IA -900),jueves,13 de mayo,14:30 - 16:00,Análisis de Texto Parte 1,https://aka.ms/13Mayo/Analisis
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,15 de mayo,08:00 - 09:30,Análisis de Texto Parte 2,https://aka.ms/15Mayo/Analisis2
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,15 de mayo,09:30 - 11:00,Asesoría #4,https://aka.ms/15Mayo/sabado/Asesoria4
+4,Fundamentos de Inteligencia Artificial  (IA -900),martes,18 de mayo,14:30 - 16:00,Análisis de Texto Parte 1 [Caso práctico],https://aka.ms/18mayo/Caso1
+4,Fundamentos de Inteligencia Artificial  (IA -900),miércoles,19 de mayo,14:30 - 16:00,Análisis de Texto Parte 2 [Caso práctico],https://aka.ms/19mayo/Caso2
+4,Fundamentos de Inteligencia Artificial  (IA -900),jueves,20 de mayo,14:30 - 16:00,Indicaciones sobre presentación de proyectos ,https://aka.ms/20mayo/Indicadores
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,22 de mayo,08:00 - 09:30,Desarrollo de Storytelling /Cierre de capacitación,https://aka.ms/22mayo/Cierre
+4,Fundamentos de Inteligencia Artificial  (IA -900),sábado,22 de mayo,09:30 - 11:00,Asesoría #5,https://aka.ms/22Mayo/sabado/Asesoria5

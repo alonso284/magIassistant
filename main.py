@@ -1,7 +1,3 @@
-# Welcome, to the TI club discord bot code.
-
-# introduction
-
 """ mac
 python3 -m pip install -U discord.py
 windows
@@ -10,11 +6,31 @@ py -3 -m pip install -U discord.py """
 # Import discord library and logging library
 import discord
 import logging
-#import intents
-from discord.ext import commands
-# Import JSON
 import json
 import os
+import csv
+from discord.ext import commands
+
+# funcitons
+
+
+def validate(modulo, dia, magIA):
+    # modulo no existe
+    if(not(modulo in magIA)):
+        return False, 'Ese módulo no existe, porfavor intente de nuevo'
+
+    # formato de dia es incorrecto
+    try:
+        int(dia[0])
+        int(dia[1])
+    except:
+        return False, 'Tu formato de dia es incorrecto, porfavor intenta de nuevo'
+
+    # formato de mes es incorrecto
+    if(not(dia[2:] == 'marzo' or dia[2:] == 'abril' or dia[2:] == 'mayo')):
+        return False, 'Tu formato de mes es incorrecto, porfavor intenta de nuevo'
+
+    return True, "Se ha salvado exitosamenre"
 
 
 # Set up logging
@@ -34,92 +50,50 @@ intents.presences = False
 # client = discord.Client()
 bot = commands.Bot(command_prefix='$')
 
-# fix boot
+
 # boot up
-
-
 @bot.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(bot))
 
-""" 
-# @client.event
-# async def on_message(message):
-#     if message.author == client.user:
-#         return
-
-#     if message.content.startswith('hello'):
-#         await message.channel.send('Hello!') """
 
 with open('./magIAObject.json') as myObject:
     magIA = json.load(myObject)
-
-""" with open('./config.json') as myObject:
-    token = json.load(myObject) """
-
-
-@bot.command()
-async def ping(ctx):
-    await ctx.send("pong")
 
 
 @bot.command()
 async def getCode(ctx, modulo, dia):
 
-    # modulo no existe
-    if(not(modulo in magIA)):
-        await ctx.send('Ese módulo no existe, porfavor intente de nuevo')
+    validated, message = validate(modulo, dia, magIA)
+    if validated:
+        await ctx.send('El código de {} {} es {}'.format(modulo, dia, magIA[modulo][dia]))
         return
-
-    # formato de dia es incorrecto
-    try:
-        int(dia[0])
-        int(dia[1])
-    except:
-        await ctx.send('Tu formato de dia es incorrecto, porfavor intenta de nuevo')
-        return
-
-    # formato de mes es incorrecto
-    if(not(dia[2:] == 'marzo' or dia[2:] == 'abril' or dia[2:] == 'mayo')):
-        await ctx.send('Tu formato de mes es incorrecto, porfavor intenta de nuevo')
-        return
-
-    await ctx.send('El código es {}'.format(magIA[modulo][dia]))
-    return
+    else:
+        await ctx.send(message)
 
 
 @bot.command()
 async def setCode(ctx, modulo, dia, codigo):
 
-    # modulo no existe
-    if(not(modulo in magIA)):
-        await ctx.send('Ese módulo no existe, porfavor intente de nuevo')
-        return
+    validated, message = validate(modulo, dia, magIA)
+    if validated:
 
-    # formato de dia es incorrecto
-    try:
-        int(dia[0])
-        int(dia[1])
-    except:
-        await ctx.send('Tu formato de dia es incorrecto, porfavor intenta de nuevo')
-        return
+        # El codigo ya existe
+        if(dia in magIA[modulo]):
+            await ctx.send('Este código ya fue almacenado, para acceder a él usa el comando `$getCode`')
+            return
+        else:
+            # almacenar código
+            magIA[modulo][dia] = codigo
 
-    # formato de mes es incorrecto
-    if(not(dia[2:] == 'marzo' or dia[2:] == 'abril' or dia[2:] == 'mayo')):
-        await ctx.send('Tu formato de mes es incorrecto, porfavor intenta de nuevo')
-        return
+            # save code
+            with open('./magIAObject.json', 'w') as myObject:
+                json.dump(magIA, myObject)
 
-    # El codigo ya existe
-    if(dia in magIA[modulo]):
-        await ctx.send('Este código ya fue almacenado, para acceder a él usa el comando `$getCode`')
-        return
-
-    # almacenar código
-    magIA[modulo][dia] = codigo
-    with open('./magIAObject.json', 'w') as myObject:
-        json.dump(magIA, myObject)
-    await ctx.send('El código de {} {} ha sido salvado correctamente'.format(modulo, dia))
-    return
+            await ctx.send('El código de {} {} ha sido salvado correctamente'.format(modulo, dia))
+            return
+    else:
+        await ctx.send(message)
 
 
 @bot.command()
@@ -132,4 +106,37 @@ async def contactInfo(ctx):
     await ctx.send(content='contacto_magiajuvenil@frskills.com')
 
 
-bot.run(os.environ.get("DPY_TOKEN"))
+@bot.command()
+async def modulo(ctx, modulo=None):
+    if modulo:
+        modulo = str(modulo)
+        with open("./InfoModulos/modulos.csv") as csv1:
+            Modulos = csv.reader(csv1, delimiter=',', quotechar='|')
+            content = ''
+            for row in Modulos:
+                if row[0] == modulo:
+                    try:
+                        content += row[2] + ' '+row[3] + ' ' + row[4] + \
+                            "\n" + '<' + row[6] + '>' + "\n\n"
+                    except:
+                        print(row[5])
+            print((len(content)))
+            await ctx.send(embed=discord.Embed(title="Módulo"+modulo, description=content, colour=discord.Colour.purple()))
+
+    else:
+        description = """
+        Modulo1 - Conoce el mundo de GitHub
+        Modulo2 - Aprendiendo a Programar
+        Modulo3 - El poder de los servidores
+        Modulo4 - Fundamentos de Inteligencia Artificial
+        """
+        await ctx.send(embed=discord.Embed(title="Contenido de Modulos de magIA", description=description, colour=discord.Colour.purple()))
+
+# run locally
+with open('./config.json') as myObject:
+    token = json.load(myObject)
+
+bot.run(token)
+
+# run on heroku
+# bot.run(os.environ.get("DPY_TOKEN"))
