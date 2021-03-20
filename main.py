@@ -79,19 +79,19 @@ async def setCode(ctx, modulo, dia, codigo):
     if validated:
 
         # El codigo ya existe
-        if(dia in magIA[modulo]):
+        """ if(dia in magIA[modulo] and magIA[modulo][dia] != ""):
             await ctx.send('Este código ya fue almacenado, para acceder a él usa el comando `$getCode`')
             return
-        else:
-            # almacenar código
-            magIA[modulo][dia] = codigo
+        else: """
+        # almacenar código
+        magIA[modulo][dia] = codigo
 
-            # save code
-            with open('./magIAObject.json', 'w') as myObject:
-                json.dump(magIA, myObject)
+        # save code
+        with open('./magIAObject.json', 'w') as myObject:
+            json.dump(magIA, myObject)
 
-            await ctx.send('El código de {} {} ha sido salvado correctamente'.format(modulo, dia))
-            return
+        await ctx.send('El código de {} {} ha sido salvado correctamente'.format(modulo, dia))
+        return
     else:
         await ctx.send(message)
 
@@ -133,10 +133,10 @@ async def modulo(ctx, modulo=None):
         await ctx.send(embed=discord.Embed(title="Contenido de Modulos de magIA", description=description, colour=discord.Colour.purple()))
 
 # run locally
-""" with open('./config.json') as myObject:
+with open('./config.json') as myObject:
     token = json.load(myObject)
 
-bot.run(token) """
+bot.run(token)
 
 # run on heroku
-bot.run(os.environ.get("DPY_TOKEN"))
+# bot.run(os.environ.get("DPY_TOKEN"))
